@@ -42,11 +42,10 @@ body {
 }
 
 .section-tytle {
-    font-size: 3.75rem;
+    font-size: 3;
     color: #333333;
-    border-left: 4px solid #FF5959;
-    border-radius: 5px;
     margin-bottom: 16px;
+    font-weight: bold;
 }
 
 .special-span {
@@ -84,7 +83,11 @@ header {
 }
 
 .header-tytle {
+    font-size: 3.75rem;
     padding-left: 13px;
+    border-left: 4px solid #FF5959;
+    border-radius: 5px;
+    font-weight: normal;
 }
 
 .header-img-container>img {
@@ -94,6 +97,52 @@ header {
 .header-footer {
     color: #434343;
 }
+
+/* mission-styles */
+.mission{
+    margin: 60px 156px 80px;
+}
+.mission-container{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+.mission-tytle{
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bold;
+}
+.mission-card{
+    border-radius: 26px;
+    padding: 25px 30px ;
+}
+/* card-colours */
+
+#bg-green{
+     background-color: rgba(79, 157, 166, 0.1);
+}
+#bg-pink{
+    background-color: rgba(255, 89, 89, 0.1);
+}
+#bg-yellow{
+    background-color: #FFF4D6;
+}
+
+
+.card-icon{
+    width: 141px;
+    height: 141px;
+}
+.card-tytle{
+    font-size: 1.5rem;
+    color: black;
+    font-weight: 600;
+    margin: 14px 0;
+}
+.card-description{
+    color: #424242;
+}
+/* responsive-styles */
 
 /* small-device-styles */
 
@@ -112,21 +161,54 @@ header {
         margin-left: 25%;
         margin-top: 1.5rem;
     }
+    .mission{
+        margin: 30px 20px;
+    }
+    .mission-container{
+        flex-wrap: wrap;
+    }
 }
 
 /* medium-device-styles */
-@media screen and (min-width:577px) and (max-width:832px) {
+@media screen and (min-width:577px) and (max-width:800px) {
     header {
         flex-direction: column-reverse;
         text-align: center;
     }
-
+    
     header {
         margin-top: 0;
     }
-
+    
     .header-content {
         margin-left: 25%;
         margin-top: 1.5rem;
+    }
+    .mission{
+        margin: 30px 20px;
+    }
+    .mission-container{
+       flex-wrap: wrap;
+    }
+}
+/* medium-small-devices */
+
+   @media screen and (min-width:801px) and (max-width:950px) {
+    .mission{
+        margin: 30px 20px;
+    }
+    .mission-container{
+       flex-wrap: wrap;
+    }
+   }
+
+/* medium-large-devices */
+
+@media screen and (min-width:951px) and (max-width:1280px) {
+    .mission{
+        margin: 30px 20px;
+    }
+    .mission-container{
+      flex-wrap: wrap;
     }
 }
