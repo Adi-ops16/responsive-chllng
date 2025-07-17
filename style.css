@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.lobster-regular {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.yeseva-one-regular {
+    font-family: "Yeseva One", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* shared styles */
+
+.flex {
+    display: flex;
+}
+
+.section-tytle {
+    font-size: 3.75rem;
+    color: #333333;
+    border-left: 4px solid #FF5959;
+    border-radius: 5px;
+    margin-bottom: 16px;
+}
+
+.special-span {
+    color: #FFAD5A;
+}
+
+.section-para {
+    font-size: 1.1rem;
+    color: #3E3E3E;
+    margin-bottom: 16px;
+}
+
+.btn {
+    color: white;
+    padding: 12px 37px;
+    border: none;
+    background-color: #FF5959;
+    border-radius: 6px;
+    margin: 16px auto;
+}
+
+/* header-styles */
+header {
+    justify-content: space-around;
+    width: 100%;
+    background-color: #e9cfb641;
+    border-radius: 16px;
+    margin-top: 20px;
+}
+
+.header-content {
+    width: 50%;
+    margin-top: 140px;
+    margin-bottom: 30px;
+}
+
+.header-tytle {
+    padding-left: 13px;
+}
+
+.header-img-container>img {
+    width: 332px;
+}
+
+.header-footer {
+    color: #434343;
+}
+
+/* small-device-styles */
+
+@media screen and (max-width:576px) {
+    header {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    header {
+
+        margin-top: 0;
+    }
+
+    .header-content {
+        margin-left: 25%;
+        margin-top: 1.5rem;
+    }
+}
+
+/* medium-device-styles */
+@media screen and (min-width:577px) and (max-width:832px) {
+    header {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    header {
+        margin-top: 0;
+    }
+
+    .header-content {
+        margin-left: 25%;
+        margin-top: 1.5rem;
+    }
+}
