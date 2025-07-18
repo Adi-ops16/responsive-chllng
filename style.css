@@ -245,6 +245,24 @@ header {
     margin-top: 100px;
 }
 
+/* footer-section-styles */
+
+.footer-section{
+    text-align: center;
+    background-color: black;
+    padding: 10px;
+}
+.footer-tytle{
+    color: white;
+    font-size: 2.25rem;
+    margin-bottom: 10px;
+}
+.footer-tytle > span{
+    color: #FF5959;
+}
+.footer-end{
+    color: rgba(217, 219, 225, 1);
+}
 /* responsive-styles */
 
 /* small-device-styles */
@@ -301,23 +319,19 @@ header {
     }
 
     .app-img {
-        top: 70px;
-        left: 85px;
+        top: -0px;
     }
 
     .app-shape-1 {
-        top: -340px;
-        left: -230px;
+       display: none;
     }
 
     .app-shape-2 {
-        top: -35px;
-        left: -150px;
+        display: none;
     }
 
     .app-shape-3 {
-        left: -150px;
-        top: -20px;
+        display: none;
     }
 }
 
